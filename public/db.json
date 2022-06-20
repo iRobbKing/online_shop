@@ -1,0 +1,48 @@
+{
+  "users": [
+    {
+      "login": "admin",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "login": "seller",
+      "password": "qwerty123",
+      "role": "user"
+    }
+  ],
+
+  "services": [
+    {
+      "name": "accounts",
+      "icon": "helmet"
+    },
+    {
+      "name": "skins",
+      "icon": "armor"
+    },
+    {
+      "name": "items",
+      "icon": "chest"
+    },
+    {
+      "name": "coins",
+      "icon": "coins"
+    }
+  ],
+
+  "guarantees": [
+    {
+      "title": "Secure Transactions",
+      "text": "Feel confident each time you transact with us.\nGamerProtect comes with SSL protection and wide range of payment processors under a safe and secured platform."
+    },
+    {
+      "title": "Customer Support",
+      "text": "Our dedicated Customer Service team are available to help with any queries about your orders and provide exceptional after-sales support."
+    },
+    {
+      "title": "Best Offers",
+      "text": "G2G provides competitive pricing to the buyers driven by a free market economy while striving to keep the cost low for our sellers."
+    }
+  ]
+}
