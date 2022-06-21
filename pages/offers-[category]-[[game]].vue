@@ -1,0 +1,3 @@
+<template>
+  <offer-catalog/>
+</template>
