@@ -29,3 +29,7 @@ async function tryToLogin(): Promise<void> {
   navigateTo('/account')
 }
 </script>
+
+<style scoped lang="scss">
+
+</style>

@@ -1,12 +1,18 @@
 <template>
   <div id="search-wrapper">
     <input type="text" v-model="search">
-    <input type="submit">
+    <input type="submit" @click="goToOffers">
   </div>
 </template>
 
 <script setup lang="ts">
+import {navigateTo} from '#app'
+
 const search = ref('')
+
+function goToOffers(): void {
+  navigateTo(`/offers-accounts-${search.value}`)
+}
 </script>
 
 <style scoped lang="scss">
@@ -38,8 +44,10 @@ input[type="text"] {
 
 input[type="submit"] {
   height: $input-height;
-  width: calc($input-height * 5);
+  width: calc($input-width / 5);
+  min-width: 60px;
   border-radius: 0 $input-border-radius $input-border-radius 0;
   background-color: red;
+  color: white;
 }
 </style>

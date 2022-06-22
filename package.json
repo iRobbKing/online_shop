@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "dev": "concurrently  \"nuxt dev\" \"npx json-server --watch ./public/db.json --port 51520\"",
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },

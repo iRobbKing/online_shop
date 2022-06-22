@@ -16,7 +16,9 @@ onMounted(async () => {
 
 <style scoped lang="scss">
 div {
+  margin-top: 4vh;
   display: flex;
-  padding: 4vh;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 </style>

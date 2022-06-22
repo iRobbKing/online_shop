@@ -42,7 +42,56 @@
     },
     {
       "title": "Best Offers",
-      "text": "G2G provides competitive pricing to the buyers driven by a free market economy while striving to keep the cost low for our sellers."
+      "text": "G2M provides competitive pricing to the buyers driven by a free market economy while striving to keep the cost low for our sellers."
     }
-  ]
+  ],
+
+  "games": [
+    "Lost Ark", "World of Warcraft", "Mortal Online 2"
+  ],
+
+  "offers": {
+    "accounts": [
+      {
+        "game": "Lost Ark",
+        "seller": "seller",
+        "cost": 100
+      },
+      {
+        "game": "Lost Ark",
+        "seller": "seller",
+        "cost": 85
+      },
+      {
+        "game": "World of Warcraft",
+        "seller": "seller",
+        "cost": 100
+      },
+      {
+        "game": "World of Warcraft",
+        "seller": "seller",
+        "cost": 125
+      },
+      {
+        "game": "Mortal Online 2",
+        "seller": "seller",
+        "cost": 1000
+      },
+      {
+        "game": "Mortal Online 2",
+        "seller": "seller",
+        "cost": 1200
+      }
+    ],
+    "skins": [],
+    "items": [],
+    "coins": [
+      {
+        "game": "Mortal Online 2",
+        "seller": "seller",
+        "cost": 1.2,
+        "amount": 100
+      }
+    ]
+  }
 }

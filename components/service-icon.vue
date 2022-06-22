@@ -1,5 +1,5 @@
 <template>
-  <NuxtLink to="#">
+  <NuxtLink :to="link">
     <div>
       <div class="icon-wrapper">
         <img :src="imagePath" :alt="to">
@@ -15,8 +15,8 @@ const props = defineProps<{
   icon: string
 }>()
 
+const link = computed(() => `/offers-${props.to}-`)
 const imagePath = computed(() => `/images/${props.icon}.png`)
-
 const capitalizedTo = computed(() => props.to[0].toUpperCase() + props.to.slice(1, props.to.length))
 </script>
 
@@ -37,8 +37,11 @@ img {
   width: $icon-size;
   height: $icon-size;
   padding: $icon-size;
-  margin: 2vh;
+  margin: 2vw;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .icon-name {

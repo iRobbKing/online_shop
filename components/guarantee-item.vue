@@ -16,7 +16,8 @@ const props = defineProps<{
 div {
   display: flex;
   flex-wrap: wrap;
-  padding: 2vh;
+  width: 25vw;
+  padding: 2vw;
   justify-content: center;
   text-align: center;
 }

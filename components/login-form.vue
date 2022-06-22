@@ -1,9 +1,11 @@
 <template>
-  <form class="login-from" @submit.prevent>
-    <slot></slot>
-    <input type="submit" @click="submit">
-    <h1 class="login-from-error">{{ error }}</h1>
-  </form>
+  <div class="login-from-wrapper">
+    <form class="login-from" @submit.prevent>
+      <slot></slot>
+      <input type="submit" @click="submit">
+      <h1 class="login-from-error">{{ error }}</h1>
+    </form>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -14,15 +16,14 @@ const props = defineProps<{
 </script>
 
 <style lang="scss">
-.login-from {
-  $width: 25vw;
-  $height: 35vh;
+.login-from-wrapper {
+  display: flex;
+  justify-content: center;
+}
 
+.login-from {
   background-color: scale-color($app-color-theme, $lightness: -25%);
-  width: $width;
-  height: $height;
-  top: calc(50vh - $height * .6);
-  left: calc(50vw - $width * .75);
+  top: 27vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -32,6 +33,7 @@ const props = defineProps<{
 
 .login-from input {
   color: black;
+  margin: 2vw;
   padding: .5rem;
   border: none;
   border-radius: 2rem;
@@ -44,5 +46,14 @@ const props = defineProps<{
 
 .login-from-error {
   color: red;
+}
+
+@media screen and(max-width: $app-mobile-width) {
+  .login-from {
+    $width: 95vw;
+
+    width: $width;
+    min-height: calc($width + 10vw);
+  }
 }
 </style>
