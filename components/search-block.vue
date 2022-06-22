@@ -18,7 +18,7 @@ function goToOffers(): void {
 <style scoped lang="scss">
 #search-wrapper {
   height: 30vh;
-  background-image: url('~/images/games.jpg');
+  background-image: url('/images/games.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
